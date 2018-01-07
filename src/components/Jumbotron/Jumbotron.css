@@ -1,3 +1,11 @@
 .jumbotron{
   font-family: 'Quattrocento', serif;
+  color: #eeeeee;
+  text-align: center;
+  margin-bottom: 0;
+  background-image: url(https://www.gannett-cdn.com/-mm-/d0fc54c7eabe796884cc9994fe38eecd249123de/c=0-108-2122-1307&r=x803&c=1600x800/local/-/media/2015/09/28/DetroitFreePress/DetroitFreePress/635790356715119108-ThinkstockPhotos-NPA-100.jpg);
+}
+
+.jumbotron > .container{
+  background-color: #444444;
 }
