@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Wrapper from "./Wrapper";
 import Jumbotron from "./Jumbotron"
 import CharCard from "./CharCard"
+import Navbar from "./Navbar"
 import characters from "./characters.json"
 import "../App.css";
 
@@ -13,8 +14,10 @@ class Clickygame extends Component {
   render() {
     return (
       <div>
-        <Jumbotron>
-        </Jumbotron>
+        <Navbar />
+
+        <Jumbotron />
+
         <Wrapper>
           {this.state.characters.map(character =>(
             <CharCard
