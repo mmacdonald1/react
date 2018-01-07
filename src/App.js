@@ -1,7 +1,6 @@
 import React from "react";
-import './App.css';
 import Clickygame from "./components/Clickygame";
-
+import './App.css';
 
 const App = () => <Clickygame />;
 

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Rory Gilmore",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/XxidilEBP7A2QYin1c3GBge0e80/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/03/22/056/n/3019466/b9167b70_TSDGIGI_EC011_H/i/Rory-Gilmore-Gilmore-Girls.JPG"
+  },
+  {
+    "id":2,
+    "name":"Lorelai Gilmore",
+    "image": "https://i.pinimg.com/originals/82/e6/eb/82e6eb7ac71232e5e9cf53f1262ac09a.jpg"
+  },
+  {
+    "id":3,
+    "name":"Luke Danes",
+    "image": "https://vignette.wikia.nocookie.net/gilmoregirls/images/c/c6/Luke_01.jpg/revision/latest?cb=20161103161629"
+  },
+  {
+    "id":4,
+    "name":"Emily Gilmore",
+    "image": "https://az616578.vo.msecnd.net/files/2016/07/06/636034357250521365-109646383_emily_gilmore.jpg"
+  },
+  {
+    "id":5,
+    "name":"Richard Gilmore",
+    "image": "https://i.pinimg.com/originals/f9/5e/46/f95e46bde37086203a986330558e36a2.jpg"
+  },
+  {
+    "id":6,
+    "name":"Paris Gellar",
+    "image": "https://vignette.wikia.nocookie.net/gilmoregirls/images/7/77/Parisgeller.jpeg/revision/latest/scale-to-width-down/310?cb=20160602012021"
+  },
+  {
+    "id":7,
+    "name":"Lane Kim",
+    "image": "https://vignette.wikia.nocookie.net/gilmoregirls/images/7/7a/220lane.jpeg/revision/latest?cb=20170111121007"
+  },
+  {
+    "id":8,
+    "name":"Sookie St.James",
+    "image": "https://i.pinimg.com/originals/29/5e/f8/295ef8a0097bb847a23a5585e8fce11b.jpg"
+  },
+  {
+    "id":9,
+    "name":"Michel Gerard",
+    "image": "https://vignette.wikia.nocookie.net/gilmoregirls/images/8/8b/1michel.jpg/revision/latest/top-crop/width/320/height/320?cb=20171124181639"
+  },
+  {
+    "id":10,
+    "name":"Ms.Patty",
+    "image": "https://vignette.wikia.nocookie.net/gilmoregirls/images/e/ec/1misspatty.jpeg/revision/latest/top-crop/width/320/height/320?cb=20170623202850"
+  },
+  {
+    "id":11,
+    "name":"Kirk",
+    "image": "https://assets.rbl.ms/13451705/980x.jpg"
+  },
+  {
+    "id":12,
+    "name":"Taylor Doose",
+    "image": "https://vignette.wikia.nocookie.net/gilmoregirls/images/3/37/Td.jpeg/revision/latest/zoom-crop/width/480/height/480?cb=20160207185715"
+  }
+]
