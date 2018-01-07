@@ -20,7 +20,7 @@ class Clickygame extends Component {
 
         <Wrapper>
           {this.state.characters.map(character =>(
-            <CharCard
+            <CharCard key= {character.id}
             name= {character.name}
             image= {character.image}
             />
