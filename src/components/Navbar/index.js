@@ -4,16 +4,13 @@ import "./Navbar.css";
 const Navbar = () =>
 <ul className="nav">
   <li className="nav-item">
-    <a className="nav-link active" href="#">Active</a>
+    Clicky Game
   </li>
   <li className="nav-item">
-    <a className="nav-link" href="#">Link</a>
+    Click an image to begin!
   </li>
   <li className="nav-item">
-    <a className="nav-link" href="#">Link</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link disabled" href="#">Disabled</a>
+    Score:0 | TopScore:0
   </li>
 </ul>;
 
