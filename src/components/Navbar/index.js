@@ -20,7 +20,7 @@ class Navbar extends Component {
         Score: {this.state.score} | Top Score: {this.state.topscore}
       </li>
     </ul>
-  );
+  )
 }
 }
 

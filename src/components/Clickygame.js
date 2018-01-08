@@ -24,8 +24,8 @@ class Clickygame extends Component {
 
   randomRender = () => {
     console.log(this.randomChar(this.state.characters))
-    return(
-    this.randomChar(this.state.characters).map(character => {
+    return (
+    this.randomChar(this.state.characters).map(character => (
 
       <CharCard
       key= {character.id}
@@ -33,21 +33,9 @@ class Clickygame extends Component {
       image= {character.image}
       />
 
-    })
-    )
+    )))}
 
 
-    {/*
-const randomChars = this.randomChar(characters)
-       return(
-        {randomChars.map(character =>(
-          <CharCard
-          key= {character.id}
-          name= {character.name}
-          image= {character.image}
-          />
-          */}
-      }
 
   render() {
     return (
