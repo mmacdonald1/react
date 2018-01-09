@@ -14,29 +14,18 @@ class Clickygame extends Component {
     topscore: 0
   };
 
-  handleClick = e => {
+  handleClick = index => {
   console.log("you clicked")
-  if (!this.state.characters.flipped) {
-      this.state.characters.checkMatch(this.state.characters.id, this.state.characters.flipped);
-      this.setState({flipped:true});
+  console.log(index)
+  console.log(this.state.characters[index].flipped)
+  let chars = this.state.characters
+  if (!this.state.characters[index].flipped) {
+    console.log(this)
+    chars[index].flipped= true;
+      this.setState({characters});
     }
     this.randomRender();
-  }
 
-  checkMatch = (id, flipped) => {
-  const cards = this.state.characters;
-    if (cards[id].flipped === false){
-      cards[id].flipped = true;
-      this.setState({score: this.state.score + 1 });
-      this.setState({message:'You guess correctly'});
-      if (this.state.score > this.state.topscore){
-        this.setState({topscore: score})
-      }
-
-   } else if (cards[id].flipped === true) {
-    this.setState({message:'You guessed incorrectly!'});
-    this.setState({score: 0});
-   }
 }
 
   randomChar = (array) => {
@@ -56,15 +45,16 @@ class Clickygame extends Component {
 
 
     return (
-      this.randomChar(this.state.characters).map(character => (
+      this.randomChar(this.state.characters).map((character, i) => (
 
         <CharCard
         className="char"
-        key= {character.id}
-        name= {character.name}
-        image= {character.image}
+        key={character.id}
+        index={i}
+        name={character.name}
+        image={character.image}
         flipped={character.flipped}
-        onClick= {() => {this.handleClick()}}
+        onClick={this.handleClick}
         />
 
       ))
