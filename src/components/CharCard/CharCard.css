@@ -26,3 +26,7 @@
 .img-container > .remove:hover {
   color: #d50000;
 }
+
+.char:hover {
+  cursor: pointer
+}
