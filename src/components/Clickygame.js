@@ -20,6 +20,7 @@ class Clickygame extends Component {
   console.log(this.state.characters[index].flipped)
   let chars = this.state.characters
   if (!this.state.characters[index].flipped) {
+    this.checkMatch(chars[index], chars[index].flipped);
     console.log(this)
     chars[index].flipped= true;
       this.setState({characters});
@@ -27,6 +28,24 @@ class Clickygame extends Component {
     this.randomRender();
 
 }
+
+checkMatch = (index, flipped) => {
+  let chars = this.state.characters;
+  console.log(index.flipped)
+    if (index.flipped === false){
+      index.flipped = true;
+      this.setState({score: this.state.score + 1 });
+      this.setState({message:'You guess correctly'});
+      if (this.state.score > this.state.topscore){
+        this.setState({topscore: this.state.score})
+      }
+
+   } else if (index.flipped === true) {
+    this.setState({message:'You guessed incorrectly!'});
+    this.setState({score: 0});
+   }
+}
+
 
   randomChar = (array) => {
     let i = array.length - 1;
