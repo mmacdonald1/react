@@ -37,7 +37,7 @@ checkMatch = (index, flipped) => {
       this.setState({score: this.state.score + 1 });
       this.setState({message:'You guess correctly'});
       if (this.state.score > this.state.topscore){
-        this.setState({topscore: this.state.score})
+        this.setState({topscore: this.state.score + 1})
       }
 
    } else if (index.flipped === true) {
