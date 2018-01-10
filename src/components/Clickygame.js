@@ -25,24 +25,25 @@ class Clickygame extends Component {
     chars[index].flipped= true;
       this.setState({characters});
     }
+    else if(this.state.characters[index].flipped === true){
+     this.setState({message:'You guessed incorrectly!'});
+     this.setState({score: 0});
+
+    }
     this.randomRender();
 
 }
 
 checkMatch = (index, flipped) => {
-  let chars = this.state.characters;
   console.log(index.flipped)
     if (index.flipped === false){
       index.flipped = true;
       this.setState({score: this.state.score + 1 });
-      this.setState({message:'You guess correctly'});
+      this.setState({message:'You guessed correctly!'});
       if (this.state.score > this.state.topscore){
         this.setState({topscore: this.state.score + 1})
       }
 
-   } else if (index.flipped === true) {
-    this.setState({message:'You guessed incorrectly!'});
-    this.setState({score: 0});
    }
 }
 
