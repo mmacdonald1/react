@@ -11,10 +11,17 @@ class Clickygame extends Component {
     characters,
     message: 'Click any image to begin!',
     score: 0,
-    topscore: 0
+    topscore: 0,
+    roundOne: true,
+    charactersReset: []
   };
 
   handleClick = index => {
+  if (this.state.roundOne) {
+    this.setState({charactersReset: this.state.characters})
+    this.setState({roundOne: false})
+    console.log('State on game start: ', this.state)
+  }
   console.log("you clicked")
   console.log(index)
   console.log(this.state.characters[index].flipped)
@@ -29,9 +36,9 @@ class Clickygame extends Component {
     else if(this.state.characters[index].flipped === true){
      this.setState({message:'You guessed incorrectly!'});
      this.setState({score: 0});
-     this.setState({characters});
-
-
+     this.setState({roundOne: true})
+     this.setState({characters: this.state.charactersReset})
+     console.log('State on game end: ', this.state)
     }
     this.randomRender();
 
