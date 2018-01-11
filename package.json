@@ -2,7 +2,7 @@
   "name": "pupster",
   "version": "0.1.0",
   "private": true,
-    "homepage": "https://mmacdonald1.github.io/react-clickygame",
+  "homepage": "https://mmacdonald1.github.io/react-clickygame",
   "dependencies": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
