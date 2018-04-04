@@ -1,7 +1,7 @@
-##Live Version
+## Live Version
 https://mmacdonald1.github.io/react-clickygame/
 
-##About
+## About
 A React Memory Game.
 
 
